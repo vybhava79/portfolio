@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vybhava Portfolio</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background: #121212;
+            color: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background: #1f1f1f;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #f5f5f5;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        header {
+            background: linear-gradient(to right, #141e30, #243b55);
+            text-align: center;
+            padding: 40px;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        section {
+            padding: 10px;
+        }
+
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeUp 1s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+        }
+
+        h2 {
+            color: #00adb5;
+        }
+
+        button {
+            background: linear-gradient(to right, #00adb5, #007bff);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        a {
+            color: #00adb5;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1f1f1f;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Vybhava Y</h1>
+    <p>Software Developer | MCA Student</p>
+</header>
+
+<section id="about" class="card">
+    <h2>About Me</h2>
+    <p>I am a passionate MCA student with skills in Java, Python, and Web Development. I enjoy solving real-world problems using technology.</p>
+</section>
+
+<section class="card">
+    <h2>Education</h2>
+    <ul>
+        <li>MCA - Cambridge Institute of Technology</li>
+        <li>BCA - Seshadripuram College</li>
+    </ul>
+</section>
+
+<section id="skills" class="card">
+    <h2>Skills</h2>
+    <ul>
+        <li>Java, Python, SQL</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Bootstrap</li>
+    </ul>
+</section>
+
+<section id="projects" class="card">
+    <h2>Projects</h2>
+
+    <p><b>IFSC Code Finder</b><br>
+    Developed a web application to fetch bank details using IFSC code using HTML, CSS, JavaScript, and MySQL.</p>
+
+    <p><b>Crime Rate Pattern Prediction System</b><br>
+    Developed a Machine Learning model that analyzes past crime data to predict future crime patterns and improve public safety.</p>
+</section>
+
+<section class="card">
+    <h2>Experience</h2>
+    <p>Intern at HAL - Developed student registration system and worked on data analysis.</p>
+</section>
+
+<section id="contact" class="card">
+    <h2>Contact</h2>
+    <p>Email: vybhava79@gmail.com</p>
+    <p>Phone: +91 7975101959</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/vybhava-y" target="_blank">linkedin.com/in/vybhava-y</a></p>
+
+    <br>
+    <button onclick="alert('Thank you for visiting!')">Hire Me</button>
+</section>
+
+<footer>
+    <p>© 2026 Vybhava</p>
+</footer>
+
+</body>
+</html>
